@@ -1,4 +1,4 @@
-import { addInput, addTableName, enableValidation } from "./script-functions.js";
+import { addInput, addTableName, enableValidation } from "./script-functions.js?v=1";
 
 export function runComponentRegistry() {
   const path = window.location.pathname;

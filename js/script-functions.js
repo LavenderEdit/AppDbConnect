@@ -43,7 +43,7 @@ export function addInput() {
   valueInput.type = "text";
   valueInput.name = "campo_valor[]";
   valueInput.classList.add("form-control");
-  valueInput.placeholder = "Valor/Archivo";
+  valueInput.placeholder = "Valor/Texto";
   valueInput.required = true;
   valueDiv.appendChild(valueInput);
 
@@ -62,7 +62,14 @@ export function addInput() {
   });
 
   typeSelect.addEventListener("change", function () {
-    valueInput.type = this.value === "file" ? "file" : "text";
+    if (this.value === "file") {
+      valueInput.type = "file";
+      valueInput.value = ""; //CAMBIO
+      valueInput.placeholder = "Seleccione archivo";
+    } else {
+      valueInput.type = "text";
+      valueInput.placeholder = "Valor/Texto";
+    }
   });
 
   typeDiv.appendChild(typeSelect);
