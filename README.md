@@ -75,7 +75,6 @@ git clone https://github.com/tu_usuario/APP-SUBIRIMAGENES.git
   ```sql
   CREATE DATABASE tu_base_de_datos;
   ```
-- Edita el archivo `php/db.php` con los datos de conexión.
 
 ### 3️⃣ Ejecutar la aplicación  
 - Asegúrate de tener un servidor local con PHP y MySQL (como XAMPP o MAMP).
